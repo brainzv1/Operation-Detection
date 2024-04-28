@@ -15,7 +15,7 @@ and the "reduceDataSize.py" which helped us use ffmpeg to clear disk space due t
 
 We've added it to git but make sure to open a directory named “DataSet” in the “mmaction2” directory and inside it put the data under the directory “Data”.
 
-Last but not least it is important that before you run train you change the code of the tsn file: manualOperationsProject\mmaction2\configs\recognition\tsn\tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb.py
+Last but not least it is important that before you run train you change the code of the tsn file: 
 Entering the version from our source code will allow you to train and presumably achieve similar outcomes to what we had.
 To process the data prior to training we created the filesToRun.py file which activates a series of the files we wrote ourselves to organize data.
 If you followed all the instructions as follow you are supposed to be able to run the command in your terminal
@@ -23,7 +23,7 @@ python tools/train.py configs/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-
 
 Notice: the train process is heavy on the GPU, and it uses a lot of resources from your computer, make sure to give it a lot of time to run.
 You can also configure the number of epochs or other variables.
-git repisotry for our code [https://github.com/brainzv1/manualOperationsProject/edit/main/ReadMe.md](https://github.com/brainzv1/Operation-Detection)
+git repisotry for our code (https://github.com/brainzv1/Operation-Detection)
 If there any problem here is the result of pip list using our conda env
 
 We’ve created “mmaction2/commands.txt” so you can do train and test and other code usage from terminal the way you like from the project folder.
