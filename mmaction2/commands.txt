@@ -1,0 +1,23 @@
+
+CTRL+R for Search
+srun --partition=main --time=3-1:30:00 --gpus=rtx_6000:1 --pty bash -i
+nvidia-smi -L
+conda activate openmmlab
+module load cuda
+cd ServerBGU/Operation-Detection-MMAction/Operartion-Detection
+make sure you have data in mmaction2/DataSet/Data
+First you run from that specific folder
+python filesToRun.py
+
+afterwards you are ready to train!
+the command line should look something like "python mmaction2/tools/train.py PathToTSNFile"
+so for example in our train we did python mmaction2/tools/train.py filesToRun/videoDataSet/videoDataSetTSNFile.py
+you can find other TSN files in the filesToRun folder. if you're train got disturbed and you want to pick it up from where you left it just add "--resume"
+
+Simmilar with test we have done for our specific case (depends also on best epoch number)
+python mmaction2/tools/test.py filesToRun/videoDataSet/videoDataSetTSNFile.py work_dir/videoDataSetTSNFile/best_acc_top1_epoch_30.pth
+
+if you want to make data with classification on picture you can simply use -  python filesToRun/classifyVideos.py
+and if you want to make data weight less you should do before filesToRun - python filesToRun/reduceDataSize.py
+
+Good luck! and have fun!
