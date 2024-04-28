@@ -23,12 +23,12 @@ python tools/train.py configs/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-
 
 Notice: the train process is heavy on the GPU, and it uses a lot of resources from your computer, make sure to give it a lot of time to run.
 You can also configure the number of epochs or other variables.
-git repisotry for our code https://github.com/brainzv1/manualOperationsProject/edit/main/ReadMe.md
+git repisotry for our code [https://github.com/brainzv1/manualOperationsProject/edit/main/ReadMe.md](https://github.com/brainzv1/Operation-Detection)
 If there any problem here is the result of pip list using our conda env
 
 We’ve created “mmaction2/commands.txt” so you can do train and test and other code usage from terminal the way you like from the project folder.
 
-(openmmlab) [atamni@auth.ad.bgu.ac.il@dt-gpu-02 Operation-Detection]$ pip list
+(openmmlab) Operation-Detection pip list
 Package                  Version    Editable project location
 ------------------------ ---------- -------------------------------------------------------------------
 absl-py                  2.0.0
@@ -75,7 +75,7 @@ mediapipe                0.10.7
 mkl-fft                  1.3.6
 mkl-random               1.2.2
 mkl-service              2.4.0
-mmaction2                1.1.0      /cs_storage/atamni/ServerBGU/Operation-Detection-MMAction/mmaction2
+mmaction2                1.1.0     Operation-Detection-MMAction/mmaction2
 mmcv                     2.0.1
 mmdet                    3.1.0
 mmengine                 0.8.4
@@ -145,4 +145,3 @@ wheel                    0.38.4
 xtcocotools              1.13
 yapf                     0.40.1
 zipp                     3.16.2
-(openmmlab) [atamni@auth.ad.bgu.ac.il@dt-gpu-02 Operation-Detection]$
