@@ -16,7 +16,7 @@ you can find other TSN files in the filesToRun folder. if you're train got distu
 
 Simmilar with test we have done for our specific case (depends also on best epoch number)
 python mmaction2/tools/test.py filesToRun/videoDataSet/videoDataSetTSNFile.py work_dir/videoDataSetTSNFile/best_acc_top1_epoch_30.pth
-
+for the next command make sure you have mmaction/demo/label.txt with list of labels ordered by the enumerate you can find in createAno.py or classifyVideos.py
 if you want to make data with classification on picture you can simply use -  python filesToRun/classifyVideos.py
 and if you want to make data weight less you should do before filesToRun - python filesToRun/reduceDataSize.py
 
